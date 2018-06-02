@@ -123,7 +123,6 @@ export type StoppedResult = {
   filePath: string,
   line: number,
   column: number,
-  message: string,
 };
 export type Scope = {
   name: string,
@@ -163,7 +162,7 @@ export type LaunchRequestArguments = {
 };
 
 export type SteppingType = "Step Into" | "Step Over";
-export type StoppedReason = "Entry" | "Breakpoint" | "Prepack Error" | SteppingType;
+export type StoppedReason = "Entry" | "Breakpoint" | SteppingType;
 
 export type SourceData = {
   filePath: string,
